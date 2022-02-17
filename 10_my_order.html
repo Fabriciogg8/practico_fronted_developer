@@ -46,13 +46,10 @@
         }
         .order{
             display: grid;
-            grid-template-columns: auto 1fr;
+            grid-template-columns: auto 1fr auto;
             gap: 16px;
             align-items: center;
-            background-color: var(--text-input-field);
-            margin-bottom: 24px;
-            border-radius: 8px;
-            padding: 0 24px;
+            margin-bottom: 12px;
         }
         .order p:nth-child(1){
             display: flex;
@@ -70,62 +67,45 @@
             font-size: var(--sm);
             color: var(--very-light-pink);  
         } 
-        .shoppig-cart{
-            display: grid;
-            grid-template-columns: auto 1fr auto auto;
-            gap: 16px;
-            margin-bottom: 24px;
-            align-items: center;
-        }
-        .shoppig-cart figure{
-            margin: 0;
-        }
-        .shoppig-cart figure img{
-            width: 70px;
-            height: 70px;
-            border-radius: 20px;
-        }
-        .shoppig-cart p:nth-child(2){
-            color: var(--very-light-pink);
-        }
-        .shoppig-cart p:nth-child(3){
-            font-size: var(--md);
-            font-weight: bold;
-        }
+      
     </style>
 </head>
 <body>
     <div class="my-order">
         <div class="my-order-container">
-            <h1 class="title"> My order </h1>
+            <h1 class="title"> My orders </h1>
             <div class="my-order-content">
                 <div class="order">
                     <p>
                         <span>2022.2.16</span>
-                        <span>6 articles</span>
+                        <span>4 articles</span>
                     </p>
-                    <p>$1560.00</p>
+                    <p>$880.00</p>
+                    <img src="./icons/flechita.svg" alt="arrow">
                 </div>
-                <div class="shoppig-cart">
-                <figure>
-                    <img src="./img/bonsai_1.png" alt="bonsai">
-                </figure>
-                <p>Bonsai tree</p>
-                <p>$480.00</p>
+                <div class="order">
+                    <p>
+                        <span>2022.2.16</span>
+                        <span>2 articles</span>
+                    </p>
+                    <p>$1500.00</p>
+                    <img src="./icons/flechita.svg" alt="arrow">
                 </div>
-                <div class="shoppig-cart">
-                <figure>
-                    <img src="./img/bonsai_2.png" alt="bonsai">
-                </figure>
-                <p>Bonsai tree</p>
-                <p>$530.00</p>
+                <div class="order">
+                    <p>
+                        <span>2022.2.16</span>
+                        <span>1 articles</span>
+                    </p>
+                    <p>$170.00</p>
+                    <img src="./icons/flechita.svg" alt="arrow">
                 </div>
-                <div class="shoppig-cart">
-                <figure>
-                    <img src="./img/bonsai_3.png" alt="bonsai">
-                </figure>
-                <p>Bonsai tree</p>
-                <p>$410.00</p>
+                <div class="order">
+                    <p>
+                        <span>2022.2.16</span>
+                        <span>1 articles</span>
+                    </p>
+                    <p>$60.00</p>
+                    <img src="./icons/flechita.svg" alt="arrow">
                 </div>
             </div>
         </div>
